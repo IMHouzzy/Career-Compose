@@ -16,5 +16,5 @@ CV atitikimo tikrinimas: darbo skelbimo puslapyje naudotojas gali patikrinti, ar
 Mokamų planų sistema: naudotojai gali įsigyti planus naudojant Stripe integraciją.
 
 
-Pastaba: Projektas sukurtas komandos, tačiau nėra viešos prieigos prie kodo dėl privatumo apribojimų kitoje reposetorijoje. Tačiau prie šio projekto prididėjau labai daug tiek prie backend tiek prie frontend programavimo. 
+Pastaba: Projektas buvo kuriamas komandoje, tačiau dėl privatumo apribojimų pagrindinė kodo saugykla nėra vieša. Vis dėlto, prie šio projekto reikšmingai prisidėjau tiek prie backend, tiek prie frontend programavimo.
 
