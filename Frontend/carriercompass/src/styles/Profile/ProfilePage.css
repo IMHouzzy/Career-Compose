@@ -1,0 +1,135 @@
+
+
+.personal-info-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.personal-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+.edit-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.edit-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background-color: #7F56D9;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+
+}
+
+.edit-button:hover {
+  background-color: #754fc7;
+}
+.edit-icon {
+  stroke: white;
+}
+.custom-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
+
+.personal-info-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.personal-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 60px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: 600;
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.input-modern {
+  font-size: 16px;
+  padding: 12px 16px;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.input-modern:focus {
+  outline: none;
+  border-color: #7F56D9;
+  box-shadow: 0 0 0 3px rgba(127, 86, 217, 0.2);
+}
+.input-modern:disabled {
+  background-color: #f0f0f0;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #e53935;
+  background-color: #ffebee;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+} 
+
+@media (max-width: 950px) {
+  .personal-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

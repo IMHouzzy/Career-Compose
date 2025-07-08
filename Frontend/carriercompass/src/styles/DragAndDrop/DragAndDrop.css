@@ -1,0 +1,117 @@
+.drag-and-drop-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    max-width: 800px;
+    margin: auto;
+    /* Horizontally center */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Submit Button */
+.submit-button {
+    margin-top: 15px;
+    background-color: #7F56D9;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    max-width: 400px;
+    width: 90%;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+}
+
+.submit-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.submit-button:hover {
+    background-color: #6d48c5;
+}
+
+.submit-button:disabled:hover {
+    background-color: #ccc;
+    /* Disable hover effect on disabled button */
+}
+
+.comment-card {
+    display: flex;
+    align-items: center;
+    background-color: #ebe1ff;
+    /* soft purple-tinted background */
+    border-left: 4px solid #7F56D9;
+    /* brand color as accent */
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.comment-icon {
+    background-color: #7F56D9;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+
+.comment-text {
+    margin: 0;
+    color: #5a4c7c;
+}
+.comment-text a {
+    color: #7F56D9;
+
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in effect */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@media (max-width: 1100px) {
+    .drag-and-drop-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+
+    .submit-button {
+        max-width: 100%;
+    }
+}

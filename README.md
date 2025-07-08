@@ -1,0 +1,14 @@
+# PVP
+
+Jeigu neturi node.js reikia https://nodejs.org/en
+1. Įsirašyti prieš pardedant per cmd:
+npm install -g npm
+konsolėje reikia buti faile \pvp\Frontend, ten nueiti su cd komanda cd ./pvp/Frontend/carriercompass
+2.Nereikia nebent neveikia įrašytas faile 
+npm install react react-router-dom react-dropzone @stripe/stripe-js
+3.Per powershell konsole leisti prieiga paleidimui
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+3.Per powershell paleisti font
+npm start
+
+~reik includint: npm install @stripe/stripe-js

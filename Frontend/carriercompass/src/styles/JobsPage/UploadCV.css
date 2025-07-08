@@ -1,0 +1,76 @@
+.dnd-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.dnd-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  padding: 3rem;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 420px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.dnd-dropzone:hover {
+  border-color: #7F56D9;
+  background-color: #f4efff;
+}
+
+.dnd-dropzone.active {
+  border-color: #4a90e2;
+  background-color: #e6f0ff;
+}
+
+.upload-icon {
+  color: #7F56D9;
+  margin-bottom: 1.5rem;
+}
+
+.dnd-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dnd-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.dnd-subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.dnd-format {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.dnd-file-info {
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #eae6ff;
+  border: 1px solid #d6ceff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  display: inline-block;
+}

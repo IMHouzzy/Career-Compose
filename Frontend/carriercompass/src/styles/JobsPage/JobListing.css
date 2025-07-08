@@ -1,0 +1,289 @@
+/* Kortelė ant viršaus */
+.listing-container {
+  max-width: 1000px;
+  margin: -150px auto 40px auto;
+  /* užkelia ant bannerio */
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
+}
+
+.listing-wrapper {
+  position: relative;
+  width: 100%;
+  margin-right: -100px;
+
+}
+
+/* Banner fonas */
+.listing-banner-bg {
+  width: 100%;
+
+  height: 350px;
+  background-image: url('../../images/joblistingBackground.png');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.listing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.listing-text {
+  flex: 1;
+  border-right: 1px solid #e3e3e3;
+}
+
+.listing-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.listing-subinfo {
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  color: #6e6e6e;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.listing-company,
+.listing-city {
+  display: inline-block;
+}
+
+.listing-salary {
+  background: #7F56D9;
+  color: white;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.listing-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: contain;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #eee;
+  filter: contrast(1.2) brightness(1.1) saturate(1.2);
+}
+
+.listing-divider {
+  margin: 30px 0 20px;
+  border: none;
+  height: 1px;
+  background: #e3e3e3;
+}
+
+.listing-description {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #444;
+}
+
+.listing-description p {
+  margin: 8px 0;
+}
+
+.listing-bold {
+  font-weight: bold;
+  font-size: 20px;
+  color: #7F56D9;
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.listing-bullet {
+  position: relative;
+  margin-left: 20px;
+  list-style-type: disc;
+
+}
+
+.listing-button-header {
+  display: flex;
+  flex-flow: row-reverse;
+  gap: 10px;
+}
+
+.listing-button-box {
+  display: flex;
+  flex-flow: row-reverse;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.listing-cta {
+  background-color: #7F56D9;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+
+.listing-cta:hover {
+  background-color: #6d45c5;
+}
+
+.listing-cta:disabled,
+.listing-cta.disabled {
+  background-color: #ccc;
+  /* Gray it out */
+  color: #666;
+  /* Dim the text */
+  border: 1px solid #aaa;
+  /* Slight border to show it's inactive */
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.cv-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cv-overlay-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 80%;
+  min-height: 600px;
+  position: relative;
+}
+
+.close-overlay-btn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7F56D9;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.close-overlay-btn:hover {
+  background-color: #6d45c5;
+}
+
+.close-overlay-btn svg {
+  stroke: #ffffff;
+  stroke-width: 3px;
+  width: 25px;
+  height: 25px;
+}
+
+.button-header {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  margin-top: 60px;
+  margin-right: 100px;
+}
+
+.choice-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.choice-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  min-height: 250px;
+  background-color: #f8f8ff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.choice-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #7F56D9;
+}
+
+.choice-card h3 {
+  font-size: 25px;
+
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.choice-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.or-divider {
+  align-self: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #888;
+  margin: 0 10px;
+}
+
+.dnd-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.dnd-buttons .listing-cta.cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.dnd-buttons .listing-cta.cancel:hover {
+  background-color: #c2c2c2;
+}

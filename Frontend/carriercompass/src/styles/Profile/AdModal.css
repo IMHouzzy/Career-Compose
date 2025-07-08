@@ -1,0 +1,42 @@
+/* components/AdModal.css */
+.ad-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.ad-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 640px;
+    width: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.ad-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background-color: #7F56D9;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.ad-buttons:hover {
+  background-color: #754fc7;
+}

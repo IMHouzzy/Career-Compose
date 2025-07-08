@@ -1,0 +1,229 @@
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    background: linear-gradient(-45deg, #6544ac, #382564, #2b2b2b, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hero Content */
+.hero-content {
+    z-index: 2;
+    color: white;
+    max-width: 1200px;
+    padding-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 58px;
+    margin-bottom: 15px;
+    max-width: 1000px;
+}
+
+.hero-content p {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.hero-button {
+    width: 220px;
+    height: 60px;
+    background: #7F56D9;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.hero-button:hover {
+    background: #6d48c5;
+    transform: scale(1.05);
+}
+
+/* Right Side Animated 3D CV */
+.hero-graphic {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 600px;
+}
+
+.cv-document {
+    width: 160px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transform-style: preserve-3d;
+    animation: rotateCV 5s linear infinite;
+}
+
+@keyframes rotateCV {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* CV Header and Lines */
+.cv-header {
+    width: 80%;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cv-line {
+    width: 90%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.cv-footer {
+    width: 60%;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Particles */
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    opacity: 0;
+    animation: floatParticle infinite ease-in-out;
+}
+
+@keyframes floatParticle {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-50px);
+        opacity: 0.8;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 1024px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center horizontally */
+        justify-content: center;
+        /* Center vertically */
+        text-align: center;
+        height: auto;
+        /* Ensure it takes full screen height */
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    .hero-graphic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .hero-button {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,26 @@
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# # Ignore environment variables
+.env
+.env.local
+
+# Ignore dependency files
+# *.log
+*.db
+
+# Ignore VS Code settings 
+.vscode/
+
+# Ignore dependencies lock file 
+requirements.txt
+Pipfile.lock
+
+
+# Ignore compiled/machine-specific files
+*.DS_Store  # macOS system files
+Frontend/carriercompass/package-lock.json

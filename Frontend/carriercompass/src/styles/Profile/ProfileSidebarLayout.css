@@ -1,0 +1,124 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.profile-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.profile-sidebar {
+    width: 250px;
+    min-height: 750px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.disabled-link {
+  color: #aaa;
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: #f8f8f8;
+}
+
+.profile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.logout-button {
+    margin-top: auto;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+.profile-top-section {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #2d2d2d;
+    padding-left: 5px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+}
+
+
+.profile-title-section {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-title-section:hover {
+    background-color: #eaeaea;
+    color: #000;
+}
+
+.profile-title-section.active {
+    background-color: rgb(238, 238, 238);
+    color: #000;
+    border-left: #754fc7 4px solid;
+}
+
+.profile-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.profile-content-wrapper {
+    width: 100%;
+}
+
+@media (max-width: 950px) {
+    .logout-button {
+        margin-top: 20px;
+
+    }
+
+    .profile-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        border-radius: 12px;
+        min-height: unset;
+    }
+}

@@ -1,0 +1,151 @@
+.pricing-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 350px;
+}
+
+/* table */
+.pricing-table-container {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 100px;
+    margin-top: -600px;
+    position: relative;
+    z-index: 0;
+    padding-top: 60px;
+}
+
+.pricing-table-container h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #7F56D9;
+}
+.pricing-container h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: #7F56D9;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pricing-table th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+.pricing-table th {
+    background-color: #7f56d9;
+    color: white;
+    font-size: 18px;
+}
+
+.pricing-table tr {
+    background-color: #f9f9f9;
+}
+
+.pricing-table tr:hover {
+    background-color: #eee;
+}
+
+.plan-table-name {
+    font-weight: bold;
+    color: #7F56D9;
+}
+
+.plan-table-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.pricing-table ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-table li {
+    padding: 5px 0;
+    font-size: 14px;
+}
+.feature-cell {
+    text-align: center;  /* Centers inline elements like img */
+}
+.feature-text {
+    text-align: center; /* Centers text horizontally */
+    vertical-align: middle; /* Centers text vertically */
+}
+
+
+.feature-cell img {
+    width: 15px;
+    height: 15px;
+    display: inline-block; /* Ensures it respects text-align */
+}
+
+.plan-hero-container {
+    width: 100%;
+    height: 700px;
+    background: #7F56D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.plan-hero-subtitle {
+    font-size: 28px;
+    font-weight: 550;
+    color: #F1F1F1;
+    margin-top: -500px;
+}
+
+.plan-hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    max-width: 800px;
+    margin-top: -20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .plan-hero-container {
+        height: auto;
+        width: 100vw; /* Ensures it takes full viewport width */
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box; /* Prevents padding from affecting width */
+       }
+     
+    .plan-hero-title {
+        font-size: 36px;
+    }
+    
+    .plan-hero-subtitle {
+        font-size: 20px;
+    }
+
+    .plans-table {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-table-container{
+        max-width: 500px;
+        width: 100%;
+    }
+}
+

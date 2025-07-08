@@ -1,0 +1,260 @@
+.pricing-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-button-group {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 240px;
+    margin: auto;
+    background: #6e4abb;
+    border-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    bottom: 240px;
+}
+
+.plan-toggle-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: #9067f0;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Toggle Button Movements */
+.plan-slide-left {
+    transform: translateX(-4%);
+}
+
+.plan-slide-right {
+    transform: translateX(96%);
+}
+
+.plan-toggle-button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(231, 231, 231);
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+    font-family: Inter, sans-serif;
+}
+
+.plan-toggle-button.active {
+    color: white;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.4s ease-in-out forwards;
+    flex-wrap: wrap;
+    margin-top: -360px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pricing-card {
+    width: 350px;
+    background: white;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: scale(1.03);
+
+}
+
+.plan-active-container {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: #9067f0;
+    color: #fff;
+    padding: 5px 40px;           /* adjust width via padding */
+    transform-origin: top right; /* pivot point */
+    transform: translate(15%, -50%) rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+  
+  .plan-active {
+    margin: 0;
+  }
+
+.plan-name {
+    font-size: 30px;
+    font-weight: 600;
+    color: #7F56D9;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.plan-description {
+    font-weight: 600;
+    color: #7F56D9;
+    margin: 0;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+.plan-price-group {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px
+  }
+
+.plan-original-price,
+.plan-price {
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+}
+
+.plan-original-price {
+    float: left;
+    margin-left: 8px;
+    text-decoration: line-through;
+    font-style: italic;
+    opacity: 70%;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    /* Pushes the button to the bottom */
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.plan-features li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.plan-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    /* Ensures it stays at the bottom */
+    padding-top: 20px;
+
+}
+
+.plan-button {
+    background-color: #7f56d9;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    width: 100%;
+}
+
+.plan-button:hover {
+    background-color: #6e4abb;
+}
+
+.plan-divider {
+    width: 95%;
+    size: 5px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+@media (max-width: 768px) {  
+    .plan-button-group {
+      max-width: 200px;
+      bottom: 0;
+    }
+  
+    .pricing-container {
+      flex-direction: column;
+      align-items: center;
+      top: 0;
+      margin-top: 0;
+    }
+  
+    .pricing-card {
+      width: 90%;
+      min-height: auto;
+    }
+  
+    .plan-toggle-button {
+      font-size: 18px;
+    }
+
+    .plan-name {
+        font-size: 36px;
+        font-weight: 600;
+        color: #7f56d9;
+        margin-bottom: -20px;
+    }
+
+    .plan-description {
+        font-weight: 600;
+        color: #7F56D9;
+        margin: 0;
+    }
+    
+    .plan-price {
+        font-size: 24px;
+        font-weight: 600;
+        color: black;
+    }
+    .plan-features li {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+  }

@@ -1,0 +1,162 @@
+.career-path-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.career-path-content {
+  display: flex;
+  gap: 20px;
+}
+
+.career-paths-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+.career-path-item {
+  flex: 1 1 calc(33.33% - 20px);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+.career-path-name {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.career-path-description {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.career-path-timeline {
+  position: relative;
+
+}
+
+.career-path-step-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+
+.career-path-step-bubble {
+  width: 12px;
+  height: 12px;
+  background-color: #7F56D9;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  z-index: 1;
+}
+
+.career-path-step-line {
+  width: 2px;
+  background-color: #e0e0e0;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  bottom: -20px;
+  z-index: 0;
+}
+
+.career-path-step-content {
+  padding-left: 20px;
+  position: relative;
+}
+
+.career-path-step-text {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 5px;
+  display: block;
+  margin-left: 10px;
+
+}
+
+.career-path-title {
+  color: #7F56D9;
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-align: center;
+  /* Centruoti tekstą */
+}
+
+.career-path-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
+.career-path-header h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.no-career-paths {
+  color: #888;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .career-path-container {
+    padding: 16px;
+  }
+
+  .career-path-content {
+    flex-direction: column;
+  }
+
+  .career-paths-list {
+    max-width: 100%;
+    display: flex;
+
+    gap: 20px;
+  }
+
+  .career-path-item {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .career-path-name {
+    font-size: 18px;
+  }
+
+  .career-path-description {
+    font-size: 15px;
+  }
+
+  .career-path-step-text {
+    font-size: 14px;
+  }
+
+  .career-path-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

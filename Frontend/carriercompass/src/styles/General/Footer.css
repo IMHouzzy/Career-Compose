@@ -1,0 +1,94 @@
+.logo-container2{
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+.logo2 {
+  width: 200px;
+  height: 120px;
+  
+}
+.footer {
+    width: 100%;
+    background: #262626;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    position: relative; /* Ensures it's placed normally */
+    z-index: 1;
+  } 
+  
+  .footer-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  
+  .footer-title {
+    color: #7F56D9;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .footer-text-conntact {
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 15px;
+  }
+  .footer-text {
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 29px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .footer-list li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 15px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .footer-list a:hover {
+    color: #7F56D9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 950px) {
+    .footer{
+      width: 100%;
+    }
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

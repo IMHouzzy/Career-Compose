@@ -1,0 +1,230 @@
+.container-unique {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.job-container-new {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+
+
+.job-content-unique {
+  display: flex;
+  gap: 20px;
+
+
+}
+
+.job-list-unique {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.job-card-unique {
+  background: #ffffff;
+  border: 1px solid #e0e0e0; /* subtle but visible border */
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); /* softer, more visible shadow */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+
+.job-card-unique:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+   background-color: #f9f7fc;
+}
+
+
+.job-card-unique.selected {
+ border-left: 4px solid #7F56D9;
+  background-color: #f9f7fc;
+}
+
+
+.job-card-unique h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+
+.match-unique {
+  color: #12B76A;
+  font-weight: bold;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.progress-container-unique {
+  margin: 8px 0;
+}
+
+.progress-bar-unique {
+  background: #e0e0e0;
+  border-radius: 5px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-unique {
+  background: #12B76A;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.job-details-unique {
+  flex: 2;
+
+  
+  border-radius: 12px;
+  padding: 24px;
+
+}
+
+
+.job-details-unique h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.description-unique {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skills-section-unique {
+  margin-bottom: 20px;
+}
+.skills-section-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+.skills-section-header h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.matched-skill-unique {
+  background-color: #12B76A;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 20px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.missing-skill-unique {
+  background-color: #F04438;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-right: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.job-level-unique {
+  color: #333;
+  font-weight: 600;
+  font-style: italic;
+  width: 220px;
+
+  font-size: 18px;
+  text-align: right;
+}
+.job-level-unique strong{
+  text-transform: capitalize;
+}
+.no-jobs-unique {
+  color: #888;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .container-unique {
+    padding: 16px;
+  }
+
+  .job-content-unique {
+    flex-direction: column;
+  }
+
+  .job-list-unique {
+    max-width: 100%;
+  }
+
+  .job-card-unique {
+    padding: 14px;
+  }
+
+  .job-card-unique h2 {
+    font-size: 18px;
+  }
+
+  .job-details-unique {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .job-details-unique h2 {
+    font-size: 20px;
+  }
+
+  .description-unique {
+    font-size: 15px;
+  }
+
+  .skills-section-header h3 {
+    font-size: 20px;
+  }
+
+  .matched-skill-unique,
+  .missing-skill-unique {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .job-level-unique {
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  .skills-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
