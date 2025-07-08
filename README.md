@@ -1,14 +1,14 @@
-# PVP
+Career Compass – AI pagrįsta karjeros tobulinimo sistema IT srityje
+Šis projektas – dirbtiniu intelektu paremta sistema, skirta padėti naudotojui rasti tinkamiausias IT sritis, darbo pasiūlymus ir mokymosi kursus, remiantis jo CV informacija. Sistema taip pat generuoja individualų karjeros tobulinimo planą.
 
-Jeigu neturi node.js reikia https://nodejs.org/en
-1. Įsirašyti prieš pardedant per cmd:
-npm install -g npm
-konsolėje reikia buti faile \pvp\Frontend, ten nueiti su cd komanda cd ./pvp/Frontend/carriercompass
-2.Nereikia nebent neveikia įrašytas faile 
-npm install react react-router-dom react-dropzone @stripe/stripe-js
-3.Per powershell konsole leisti prieiga paleidimui
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-3.Per powershell paleisti font
-npm start
+Pagrindinės funkcijos
+CV analizė su AI pagalba: sistema analizuoja naudotojo CV ir nustato, kurioms IT sritims jis yra tinkamiausias. AI pasiūlo 5 geriausiai atitinkančias sritis, pateikia trumpą paaiškinimą, kodėl jos tinka, bei išskiria turimus įgūdžius ir trūkstamus kompetencijų aspektus.
+Karjeros kelio planas ("Career Path"): AI sugeneruoja žingsnis po žingsnio planą, kaip tapti konkrečios pozicijos specialistu.
+Darbo pasiūlymai: naudojantis atrankos algoritmu, iš duomenų bazės pateikiami naudotojui tinkamiausi darbo skelbimai, į kuriuos jis galėtų kandidatuoti.
+Kursų rekomendacijos: pagal trūkstamus įgūdžius sistema atrenka ir pasiūlo kursų sąrašą, kurie padėtų tobulėti pasirinktoje srityje.
+CV atitikimo tikrinimas: darbo skelbimo puslapyje naudotojas gali patikrinti, ar jo CV atitinka darbo reikalavimus, bei gauti AI patarimus, kaip CV patobulinti.
+Mokamų planų sistema: naudotojai gali įsigyti planus naudojant Stripe integraciją.
 
-~reik includint: npm install @stripe/stripe-js
+
+Pastaba: Projektas sukurtas komandos, tačiau nėra viešos prieigos prie kodo dėl privatumo apribojimų kitoje reposetorijoje. Tačiau prie šio projekto prididėjau labai daug tiek prie backend tiek prie frontend programavimo. 
+
