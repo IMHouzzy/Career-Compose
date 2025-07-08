@@ -1,7 +1,8 @@
 Career Compass – AI pagrįsta karjeros tobulinimo sistema IT srityje
 Šis projektas – dirbtiniu intelektu paremta sistema, skirta padėti naudotojui rasti tinkamiausias IT sritis, darbo pasiūlymus ir mokymosi kursus, remiantis jo CV informacija. Sistema taip pat generuoja individualų karjeros tobulinimo planą.
 
-Pagrindinės funkcijos
+Pagrindinės funkcijos:
+
 CV analizė su AI pagalba: sistema analizuoja naudotojo CV ir nustato, kurioms IT sritims jis yra tinkamiausias. AI pasiūlo 5 geriausiai atitinkančias sritis, pateikia trumpą paaiškinimą, kodėl jos tinka, bei išskiria turimus įgūdžius ir trūkstamus kompetencijų aspektus.
 
 Karjeros kelio planas ("Career Path"): AI sugeneruoja žingsnis po žingsnio planą, kaip tapti konkrečios pozicijos specialistu.
